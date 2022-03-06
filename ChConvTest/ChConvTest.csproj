@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChConvUtil\ChConvUtil.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Dictionary\**" 
+      CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="JiebaResource\**" 
+      CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
