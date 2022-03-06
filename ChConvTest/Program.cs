@@ -1,7 +1,8 @@
 ﻿var s = "預設記憶體大小與硬碟容量";
-var resPath = 
+var resPath =
     Path.GetDirectoryName(typeof(Program).Assembly.Location);
 var c = new ChConvUtil.Converter(resPath);
-Console.WriteLine(c.TWtoCN(s));
-Console.WriteLine(c.CNtoTW(s));
+var r = c.TWtoCN(s);
+Console.WriteLine(r);
+Console.WriteLine(c.CNtoTW(r));
 
